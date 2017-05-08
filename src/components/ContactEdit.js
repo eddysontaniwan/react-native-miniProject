@@ -4,7 +4,7 @@
 
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { Text, Animated } from 'react-native';
+import { Animated } from 'react-native';
 import { connect } from 'react-redux';
 import ContactForm from './ContactForm';
 import { contactUpdate, contactSave, contactDelete } from '../actions/ContactAction';

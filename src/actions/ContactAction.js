@@ -49,20 +49,6 @@ export const contactUpdate = ({ prop, value }) => {
 
 export const contactFetch = () => {
     return (dispatch) => {
-        // fetch('BASE_URL, {
-        //     method: 'GET',
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify({
-        //         // firstParam: 'yourValue',
-        //         // secondParam: 'yourOtherValue',
-        //     })
-        // })
-
-
-
         axios.get(BASE_URL)
             .then(response => {
                     dispatch({ type: CONTACT_FETCH_SUCCESS, payload: response.data });
