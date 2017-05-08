@@ -37,9 +37,6 @@ class ContactForm extends Component {
                         value={this.props.firstName}
                         onChangeText={
                             this.onFirstNameChange.bind(this)
-                            // value => this.props.contactUpdate({
-                            //     prop: 'firstName', value
-                            // })
                         }
                     />
                 </CardSection>
@@ -51,9 +48,6 @@ class ContactForm extends Component {
                         value={this.props.lastName}
                         onChangeText={
                             this.onLastNameChange.bind(this)
-                            // value => this.props.contactUpdate({
-                            //     prop: 'lastName', value
-                            // })
                         }
                     />
                 </CardSection>
@@ -65,9 +59,6 @@ class ContactForm extends Component {
                         value={this.props.age}
                         onChangeText={
                             this.onAgeChange.bind(this)
-                            // value => this.props.contactUpdate({
-                            //     prop: 'age', value
-                            // })
                         }
                     />
                 </CardSection>
