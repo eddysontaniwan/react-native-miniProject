@@ -15,7 +15,6 @@ class ContactEdit extends Component {
 
     componentWillMount() {
         _.each(this.props.contact, (value, prop) => {
-            console.log(value, prop);
             this.props.contactUpdate({ prop, value });
         });
     }
@@ -33,7 +32,6 @@ class ContactEdit extends Component {
 
     onAccept() {
         const { id } = this.props.contact;
-        console.log(this.props.contact);
 
         this.props.contactDelete({ id });
         this.setState({ showModal: false });
